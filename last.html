@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>Success</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+<!-- Top Background Image Wrapper -->
+<div class="bgded"> 
+    <style>
+        html {
+            height: 100%;
+             }
+
+        .bgded {
+            background-image: url('https://vignette.wikia.nocookie.net/pottermore/images/a/ad/B5C27M2.png/revision/latest?cb=20150929224550');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -999;
+        }
+    </style>
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear">
+    <article> 
+      <!-- ################################################################################################ -->
+      <h1 class="heading" align="center" valign="center" style="font-weight: bold;font-size:80px;font-family: 'Permanent Marker'; color:black">Success!</h1>
+      <p class="font-x1 uppercase bold" style="font-weight: bold;font-size:40px;color:black">KIDNEY : -4387</p>
+
+      <!-- ################################################################################################ -->
+    </article>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+
+<script type="text/javascript">
+function password() {
+var testV = 1;
+var pass1 = prompt('Password:','');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1 == "australia") {
+alert('Password Correct!');
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Wrong Password!');
+}
+if (pass1!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+document.write(password());
+</script>
+
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

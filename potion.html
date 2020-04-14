@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>Potion</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Courier+Prime|Noto+Sans+TC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lakki+Reddy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+<!-- Top Background Image Wrapper -->
+<div class="bgded"> 
+    <style>
+        html {
+            height: 100%;
+             }
+
+        .bgded {
+            background-image: url('https://images.ctfassets.net/usf1vwtuqyxm/ytYWw9Eota22KOi42WwoQ/1a7e8877bb46f426957620c6658d5072/PotionsClassroom_PM_B1C16M3_PotionsLinedUpForPhilosophersStoneCharm_Moment.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -999;
+        }
+    </style>
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear">
+    <article> 
+      <!-- ################################################################################################ -->
+      <h1 class="heading" align="center" valign="center" style="font-weight:bold;font-size: 55px; font-family: 'Courier Prime'; color: silver">The Potion Puzzle</h1>
+      <p class="font-x1 uppercase bold" style="font-weight: bold; font-size: 24px; color:silver;font-family: 'Noto Sans TC' ">哪一瓶魔藥可以使你繼續前進呢？</p>
+      <br>
+      <p class="hint" style="font-size: 20px;font-family: 'Noto Sans TC'; color: #465078; font-weight:bold;background-color: #465078">毒藥會送你回原點，蕁麻酒原地停留，返回藥則是上一關</p>
+      <b><button class="btn" href="#" onclick="showCommentDiv(this);" onmouseout="hideCommentDiv();" style="background-color: #465078; border-color: #465078; font-weight:bold;
+ ">Open</button></b>
+
+<script type="text/javascript">
+ /*顯示浮動框*/
+    function showCommentDiv(obj) {
+        var top = $(obj).offset().top;
+        var left = $(obj).offset().left + $(obj).width() - 7;
+        $("#commentListDiv").css({'top':top + "px",'left':left+"px"}).show("slow");
+    }
+
+     function showThis(obj) {
+        $(obj).show();
+    }
+    /*隱藏浮動框*/
+    function hideCommentDiv() {
+        $("#editCourseDiv").hide();
+    }
+    function hideThis(obj) {
+        $(obj).hide();
+    }
+
+</script>
+
+<div align="center" id="commentListDiv" onmouseover="showThis(this);" onmouseout="hideThis(this);" style="width:650px;height:950px;border:solid 0px #a1bece;position:absolute;left: 50%; top:50%; margin-top:-410px; margin-left:300px; display:none;background-image: url('http://pic.51yuansu.com/backgd/cover/00/05/25/5b6283a9ae092.jpg!/fw/780/quality/90/unsharp/true/compress/true');  ">
+  <p class="puzzle" style="color:black; font-size: 17px; font-family:'Note Sans TC';"><br><br>
+          Danger lies before you, while safety lies behind,<br>
+          危險在前，安全在後，<br>
+          Two of us will help you, whichever you would find,<br>
+          我們之中有兩個可以給你援手，<br>
+          One among us seven will let you move ahead,<br>
+          但你得先把它們給喝進口，<br>
+          Another will transport the drinker back instead,<br>
+          七個裡面有一個可以讓你繼續前進，<br>另一個會將飲者送回門後，<br>
+          Two among our number hold only nettle wine,<br>
+          我們有兩個裡面只裝著蕁麻酒，<br>
+          Three of us are killers, waiting hidden in line.<br>
+          三個是殺手，藏在隊伍中靜靜等候。<br>
+          Choose, unless you wish to stay here for evermore,<br>
+          選擇吧，除非你想永遠在此逗留，<br>
+          To help you in your choice, we give you these clues four:<br>
+          為了幫助你選取，在此提供你四個線索：<br>
+          First, however slyly the poison tries to hide<br>
+          首先，不論毒藥藏得多麼狡猾，<br>
+          You will always find some on nettle wine's left side;<br>
+          其實他們都在蕁麻酒的左方；<br>
+          Second, different are those who stand at either end,<br>
+          其次，左右兩端的瓶裡內容不同，<br>
+          But if you would move onwards neither is your friend;<br>
+          但你若想繼續前進，它們就不是你的朋友；<br>
+          Third, as you see clearly, all are different size,<br>
+          第三，如你所見，七個瓶子個個不同，<br>
+          Neither dwarf nor giant holds death in their insides;<br>
+          矮鬼或是巨人裡面，都沒有死神在等候，<br>
+          Fourth, the second left and the second on the right<br>
+          第四，左邊第二與右邊第二乍見之下完全不同，<br>
+          Are twins once you taste them, though different at first sight<br>
+          嚐了以後才知道它們沒有不同。<br></p>
+<p class="puzzle" style="color:#715936; font-size: 18px; font-family:'Note Sans TC'; font-weight: bold;">從左到右為A-G</p>
+
+<a class="btn" href="index.html" style="border-style: none; background-color:rgba(0,0,0,0); width:60px; height: 60px">
+<button class="option" onclick="poison();" href="index.html" style="width: 60px; height: 60px; background-color: #D3A777; border-color:#D3A777; display: inline; color:#6B6A6A; font-size: 30px">A
+</button></a>
+<a class="btn" href="potion.html" style="border-style: none; background-color:rgba(0,0,0,0); width:60px; height: 60px">
+<button class="option" onclick="nettlewine();" style="width: 60px; height: 60px; background-color: #D3A777; border-color:#D3A777; display: inline; color:#6B6A6A; font-size: 30px">B
+</button></a>
+<a class="btn" href="code.html" style="border-style: none; background-color:rgba(0,0,0,0); width:60px; height: 60px">
+<button class="option" onclick="forward();" href="code.html" style="width: 60px; height: 60px; background-color: #D3A777; border-color:#D3A777; display: inline; color:#6B6A6A; font-size: 30px">C
+</button></a>
+<a class="btn" href="index.html" style="border-style: none; background-color:rgba(0,0,0,0); width:60px; height: 60px">
+<button class="option" onclick="poison();" href="index.html" style="width: 60px; height: 60px; background-color: #D3A777; border-color:#D3A777; display: inline; color:#6B6A6A; font-size: 30px">D
+</button></a>
+<a class="btn" href="index.html" style="border-style: none; background-color:rgba(0,0,0,0); width:60px; height: 60px">
+<button class="option" onclick="poison();" href="index.html" style="width: 60px; height: 60px; background-color: #D3A777; border-color:#D3A777; display: inline; color:#6B6A6A; font-size: 30px">E
+</button></a>
+<a class="btn" href="potion.html" style="border-style: none; background-color:rgba(0,0,0,0); width:60px; height: 60px">
+<button class="option" onclick="nettlewine();" style="width: 60px; height: 60px; background-color: #D3A777; border-color:#D3A777; display: inline; color:#6B6A6A; font-size: 30px">F
+</button></a>
+<a class="btn" href="button.html" style="border-style: none; background-color:rgba(0,0,0,0); width:60px; height: 60px">
+<button class="option" onclick="back();" href="index.html" style="width: 60px; height: 60px; background-color: #D3A777; border-color:#D3A777; display: inline; color:#6B6A6A; font-size: 30px">G
+</button></a>
+
+<script type="text/javascript">
+  function poison(){
+    alert("你喝到了毒藥中毒，無法成功前進！")
+  }
+
+  function nettlewine(){
+    alert("你喝到了蕁麻酒，無法成功前進！")
+  }
+
+  function back(){
+    alert("你喝到了返回藥，無法成功前進，被送到門後！")
+  }
+
+  function forward(){
+    alert("你喝到了前進藥，恭喜！")
+  }
+
+</script>
+    </div>
+      <!-- ################################################################################################ -->
+    </article>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
